@@ -1,18 +1,13 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import FunctionalGreeting from './components/FunctionalGreeting';
-import FunctionalGreetingWithProps from './components/FunctionalGreetingWithProps';
+import StatefulGreeting from './components/StatefulGreeting';
 
-class App extends Component {
-  render() {
+function App() {
     return (
       <div className="App">
-       <FunctionalGreeting />
-       <FunctionalGreetingWithProps />
+        <StatefulGreeting greeting="I'm a statful class component!"/>
       </div>
     );
   }
-}
 
 export default App;
